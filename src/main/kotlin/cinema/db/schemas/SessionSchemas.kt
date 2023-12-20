@@ -2,7 +2,7 @@ package cinema.db.schemas
 
 class SessionCreate(
     val filmId: Int,
-    val startAt: Int,
+    val startsAt: Int,
 )
 
 class SessionUpdate(

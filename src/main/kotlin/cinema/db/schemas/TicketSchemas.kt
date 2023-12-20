@@ -3,12 +3,13 @@ package cinema.db.schemas
 class TicketCreate(
     val sessionId: Int,
     val seatRow: Int,
-    val setColumn: Int,
+    val seatColumn: Int,
 )
 
 class TicketUpdate(
     val seatRow: Int,
-    val setColumn: Int,
+    val seatColumn: Int,
+    val confirmed: Boolean,
 )
 
 class TicketDelete(
