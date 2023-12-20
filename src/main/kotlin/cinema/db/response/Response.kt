@@ -1,5 +1,5 @@
 package cinema.db.response
 
-interface IResponse {
+abstract class Response(
     val status: Status
-}
+)

@@ -5,6 +5,7 @@ import cinema.db.response.*
 
 /** Interface for cinema app repository */
 interface IRepository {
+    fun getFilms(): FilmsResponse
     fun createFilm(film: FilmCreate): StatusResponse
     fun updateFilm(film: FilmUpdate): StatusResponse
     fun deleteFilm(film: FilmDelete): StatusResponse

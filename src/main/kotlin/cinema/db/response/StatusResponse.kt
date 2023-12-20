@@ -1,3 +1,5 @@
 package cinema.db.response
 
-class StatusResponse(override val status: Status) : IResponse
+class StatusResponse(
+    status: Status
+) : Response(status)
