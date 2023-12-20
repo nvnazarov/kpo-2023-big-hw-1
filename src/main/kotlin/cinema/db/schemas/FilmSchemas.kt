@@ -6,6 +6,7 @@ class FilmCreate(
 )
 
 class FilmUpdate(
+    val filmId: Int,
     val title: String,
     val duration: Int,
 )
