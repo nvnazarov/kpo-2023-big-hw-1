@@ -1,14 +1,13 @@
 package cinema.db.schemas
 
-class SessionCreate(
+import java.time.LocalDateTime
+
+class SessionAddSchema(
     val filmId: Int,
-    val startsAt: Int,
+    val startsAt: LocalDateTime,
 )
 
-class SessionUpdate(
-    val startAt: Int,
-)
-
-class SessionDelete(
+class SessionRescheduleSchema(
     val sessionId: Int,
+    val startsAt: LocalDateTime,
 )

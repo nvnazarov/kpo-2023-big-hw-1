@@ -1,21 +1,19 @@
 package cinema.db.schemas
 
-class TicketCreate(
+class TicketAddSchema(
     val sessionId: Int,
     val seatRow: Int,
     val seatColumn: Int,
 )
 
-class TicketUpdate(
-    val seatRow: Int,
-    val seatColumn: Int,
-    val confirmed: Boolean,
-)
-
-class TicketDelete(
+class TicketCancelSchema(
     val ticketId: Int,
 )
 
-class TicketsGetForSession(
+class TicketConfirmSchema(
+    val ticketId: Int,
+)
+
+class TicketsGetForSessionSchema(
     val sessionId: Int
 )

@@ -1,16 +1,12 @@
 package cinema.db.schemas
 
-class FilmCreate(
+class FilmAddSchema(
     val title: String,
     val duration: Int,
 )
 
-class FilmUpdate(
+class FilmEditSchema(
     val filmId: Int,
     val title: String,
     val duration: Int,
-)
-
-class FilmDelete(
-    val filmId: Int,
 )

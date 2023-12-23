@@ -5,18 +5,15 @@ import cinema.db.response.*
 
 /** Interface for cinema app repository */
 interface IRepository {
-    fun getFilms(): FilmsResponse
-    fun createFilm(film: FilmCreate): StatusResponse
-    fun updateFilm(film: FilmUpdate): StatusResponse
-    fun deleteFilm(film: FilmDelete): StatusResponse
-
-    fun createSession(session: SessionCreate): StatusResponse
-    fun updateSession(session: SessionUpdate): StatusResponse
-    fun deleteSession(session: SessionDelete): StatusResponse
-
-    fun createTicket(ticket: TicketCreate): StatusResponse
-    fun updateTicket(ticket: TicketUpdate): StatusResponse
-    fun deleteTicket(ticket: TicketDelete): StatusResponse
-
-    fun getTicketsForSession(session: TicketsGetForSession): TicketsResponse
+    fun getAllFilms(): FilmsListResponse
+    fun addFilm(film: FilmAddSchema): StatusResponse
+    fun editFilm(film: FilmEditSchema): StatusResponse
+    fun getAllSessions(): SessionsListResponse
+    fun addSession(session: SessionAddSchema): StatusResponse
+    fun rescheduleSession(session: SessionRescheduleSchema): StatusResponse
+    fun getAllTickets(): TicketsListResponse
+    fun addTicket(ticket: TicketAddSchema): StatusResponse
+    fun cancelTicket(ticket: TicketCancelSchema): StatusResponse
+    fun confirmTicket(ticket: TicketConfirmSchema): StatusResponse
+    fun getTicketsForSession(session: TicketsGetForSessionSchema): TicketsListResponse
 }

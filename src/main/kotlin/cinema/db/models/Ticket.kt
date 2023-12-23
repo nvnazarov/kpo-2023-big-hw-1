@@ -5,5 +5,5 @@ class Ticket(
     val sessionId: Int,
     val seatRow: Int,
     val seatColumn: Int,
-    val confirmed: Boolean
+    val confirmed: Boolean = false
 )

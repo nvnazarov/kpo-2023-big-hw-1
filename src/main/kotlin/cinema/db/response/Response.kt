@@ -1,5 +1,7 @@
 package cinema.db.response
 
+/** Base class for all responses of the repository. */
 abstract class Response(
-    val status: Status
+    /** Response status. */
+    val status: Status,
 )
