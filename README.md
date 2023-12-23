@@ -9,7 +9,8 @@
 4. редактирования данных о фильмах и расписания сеансов их показа;
 5. отметки занятых мест в зале посетителями конкретного сеанса.
 
-Код можно найти тут: https://github.com/nvnazarov/kpo-2023-big-hw-1
+- Код можно найти тут: https://github.com/nvnazarov/kpo-2023-big-hw-1
+- Диаграммы тут: https://drive.google.com/drive/folders/1EACjstb_CB9TYjUIlUkFLRuOd3GU9BSG?usp=sharing
 
 # Использование
 
